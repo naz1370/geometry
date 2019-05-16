@@ -748,12 +748,25 @@
     </volume>
 
 
+   <volume name="logicUSepoxy_0_0">
+      <materialref ref="Vacuum"/>
+      <solidref ref="uscoilunion_0"/>
+      <auxiliary auxtype="SensDet" auxvalue="coilDet"/>
+      <auxiliary auxtype="DetNo" auxvalue="100"/>
+   </volume>
+
    <volume name="logicUScoilunion_0">
       <materialref ref="Copper"/>
       <solidref ref="uscoilunion_7"/>
       <auxiliary auxtype="Color" auxvalue="magenta"/>
       <auxiliary auxtype="SensDet" auxvalue="coilDet"/>
       <auxiliary auxtype="DetNo" auxvalue="4001"/>
+
+      <physvol name="USepoxy_0_0">
+        <volumeref ref="logicUSepoxy_0_0"/>
+        <positionref ref="CENTER"/>
+        <rotationref ref="RotateZ_0"/>
+      </physvol>
     </volume>
 
     <volume name="logicUScoilunion_1">
